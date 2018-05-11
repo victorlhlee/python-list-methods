@@ -5,6 +5,7 @@
 
 hacker_legends = ['LulzSec', 'Gary McKinnon', 'Adrian Lamo', 'Jonathan James', 'Kevin Poulsen']
 
+print(hacker_legends)
 #insert (index, element) adds a new element at any position in your list.
 #2. You just created a networking study list and forget to add in 'SSH'. Please add that into the 3rd position in the networking list and print your results.
 
