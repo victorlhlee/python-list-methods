@@ -1,66 +1,96 @@
-#List methods allow you to modify lists. The following are list methods for you to practice with.
+#List methods allow you to modify lists. The following are some list methods for you to practice with. Feel free to google resources to help you with this assignment.
 
 #append(element) adds a single element to the list
-#1. Fu Sheng is also deserving to be in the Kung Fu Legends list. Add him in and print your results.
+#1. 'Anonymous' is also deserving to be in the hacker legends list. Add him in to the hacker legends list and print your results.
 
-kungfu_legends = ['Bruce Lee', 'Jackie Chan', 'Jet Li', 'Donnie Yen']
+hacker_legends = ['LulzSec', 'Gary McKinnon', 'Adrian Lamo', 'Jonathan James', 'Kevin Poulsen']
 
-kungfu_legends.append('Fu Sheng')
-print(kungfu_legends)
+hacker_legends.append('Anonymous')
+print(hacker_legends)
 
 #insert (index, element) adds a new element at any position in your list.
-#2. I just bought a pair of Vivo shoes! Please add Vivo to my kicks list and print the results.
+#2. You just created a networking study list and forget to add in 'SSH'. Please add that into the 3rd position in the networking list and print your results.
 
-kicks_list = ['Nike', 'Adidas', 'Vans', 'Pro-Keds', 'slippahs']
+networking = ['packet', 'LAN', 'WAN', 'port', 'firewall', 'VPN']
 
-kicks_list.insert(2, 'Vivo')
-print(kicks_list)
+networking.insert(3, 'SSH')
+print(networking)
 
 #remove(element) removes a single element from the list
-#3. I am allergic to cats and hence not a big cat lover. Help me remove cats from the list below.
+#3. The cyber security analyst entered the wrong IP address in the list below. Please remove the non-float integer from the ip addy list and print your results.
 
-fav_pets = ['pugs', 'ducks', 'pigs', 'cats', 'goats', 'giraffes']
+ip_addy = [255.224, 192.168,  1331904083.25, 5102018, 10.255, 172.31]
 
-fav_pets.remove('cats')
-print(fav_pets)
+ip_addy.remove(5102018)
+print(ip_addy)
 
 #pop(index) removes the element at the given index position
-#4. I love me some chocolate but hate coconuts. Remove Almond Joy from the list below.
+#4. The cyber traits list below is a list of traits that fit a career in cyber security. Everything is accurate, except for 'lazy'. Please remove 'lazy' from the list and print your results.
 
-candy = ['Kit Kat', 'Twix', 'Reese Peanut Butter Cups', 'Almond Joy', 'M&Ms', 'Snickers', 'Hersheys']
+cyber_traits = ['detailed oriented', 'methodically', 'lazy', 'persistent', 'curious', 'instinctive']
 
-candy.pop(3)
-print(candy)
+cyber_traits.pop(2)
+print(cyber_traits)
 
 #extend(list) adds elements from another list 
-#5. Your significant other just gave you a new RSVP list to add into your list. Add the new list and print your results.
+#5. Combine the new co list with the sec co list and print your results.
 
-party_list = ['Snoop', 'Drake', 'Rihanna', 'Ed Sheeran', 'Migos']
-new_rsvp = ['Bruce', 'Fu Sheng', 'Khalid']
+sec_co = ['IBM', 'Raytheon', 'Mimecast', 'Cisco']
+new_co= ['Checkp Point Software', 'Palo Alto Networks', 'Symantec', 'Trend Micro']
 
-party_list.extend(new_rsvp)
-print(party_list)
+sec_co.extend(new_co)
+print(sec_co)
 
 #index(element) searches an element in the list and returns its index
-#6. Find the index position of Grimace from the mcdonalds list below and print your result.
+#6. There were some headline grabbing cyber attacks in 2017. In the cyber attacks list below, find the index position of 'WannaCry' and print your result.
 
-mcdonalds = ['Ronald', 'Mayor McCheese', 'Hamburglar', 'Officer Big Mac', 'Grimace', 'Birdie the Early Bird', 'Fry Kids', "Uncle O'Grimacey" ]
+cyber_attacks = ['Equifax Data Breach', 'Uber Data Breach', 'Yahoo!','WannaCry', 'Deep Root Analytics']
 
-grimace_pos = mcdonalds.index('Grimace')
-print(grimace_pos)
+print(cyber_attacks[3])
 
 #count(element) counts how many times an element is in a list
-#7. Find how many 'wish' are in the list below and print your result.
+#7. In the dns list below, find the number of ocurrence for 98.105 and print your results.
 
-wishful = ['I', 'wish', 'to', 'wish', 'the', 'wish', 'you', 'wish', 'to', 'wish', 'but', 'if', 'you', 'wish', 'the', 'wish', 'the', 'witch', 'wishes', 'I', 'wont', 'wish', 'the', 'wish', 'you', 'wish', 'to', 'wish']
+dns_list = [98.105, 98.1115, 99.105, 98.111, 98.105, 98.106, 98.501]
 
-wish_count = wishful.count('wish')
-print(wish_count)
+print(dns_list.count(98.105))
 
 #reverse() reverses the elements of a given list
-#8. Use the force, or in this case the reverse method to help Yoda make some sense with his motivational talk to the young Jedi interns.*/
+#8. Decipher Mr. Robot's quote using the reverse method and print his message.
 
-yoda = ['try', 'no', 'is', 'there', 'not', 'do', 'or', 'do']
+mr_robot = ['bigger', 'something', 'represents', 'it', 'mistake', 'a', 'just', 'never', 'is', 'bug', 'a']
 
-yoda.reverse()
-print(yoda)
+mr_robot.reverse()
+print(mr_robot)
+
+#sort () sorts elements of a given list in a specific order (ascending or descending)
+#9 Sort the following list of SSH Ids in ascending order
+
+ssh_list = [1331903959.94555, 1331901011.84795, 1331903492.37203, 1331901032.03789, 1331903508.24007, 1331903476.8]
+
+ssh_list.sort()
+print(ssh_list)
+
+#print the list in descending order
+ssh_list.sort(reverse=True)
+print(ssh_list)
+
+#max() returns the largest element in the list
+#10 Find the largest integer in the network list below:
+
+network_list = [39104, 38694, 38702, 38787, 39860]
+
+print(max(network_list))
+
+#min() returns the smallest element in the list
+#11 Find the smallest integet in the network list below:
+
+network_list = [39104, 38694, 38702, 38787, 39860]
+
+print(min(network_list))
+
+#sum() calculates the sum of the all the elements in the list
+#12 Find the sum of the following occurence list below:
+
+occurences = [3, 2.5, 9, 7, 21, 6, 8]
+print(sum(occurences))
